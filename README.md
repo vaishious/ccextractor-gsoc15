@@ -23,33 +23,21 @@ The main motivation for this project is to improve upon the work done by Anshul 
 * **Week 1:**  
  Get familiar with the internals of FFmpeg libraries. In particular the `libavformat`,`libavcodec` and `libavfilter` libraries after reading the [Doxygen documentation](https://www.ffmpeg.org/doxygen/trunk/index.html)
 * **Week 2:**  
- Understand the code and familiarity with the CCExtractor parser. Think about working plan and skeleton code required for integration of the Closed Captions support in the decoder. 
-
+ Understand the code and familiarity with the CCExtractor parser. Think about working plan and skeleton code required for integration of the Closed Captions support in the decoder.
 * **Week 3:**  
- 
  Start with the demux process in the `libavformat` library. Have a basic working code. 
-* **Week 4:**
-
+* **Week 4:**  
  Tweak the code, and make it more readable/understandable code. Writing testing for the new code and add documentation. Also try the code for multiple test files in different formats and measure performance.
-* **Week 5:**
-
+* **Week 5:**  
  Refine code if necessary and also make changes to the working plan and general code outline.
-* **Week 6 and 7(half):**
-
+* **Week 6 and 7(half):**  
  Work on decoding process for the `libavcodec` library. Multiple CC standards will need to be accounted for and taken care of. 
-* **Week 7(half) and 8:**
-
+* **Week 7(half) and 8:**  
  Tweak code. Add documentation for the library. Write large amount of testing and measure performance of the library. Code should be optimized for fast run time.
-* **Week 9:**
-
+* **Week 9:**  
  Add the Closed Caption support feature to `libavfilter`. For complex filtergraphs I need to make sure the algorithm can be changed to add CC support without errors on dependencies by testing.
-* **Week 10 and 11:**
-
+* **Week 10 and 11:**  
  Also the `ffmpeg` command line tool should have support for the new feature. 
  Understand and become familiar with [Anshul's code](https://www.google-melange.com/gsoc/project/details/google/gsoc2014/anshul_bits/5757334940811264) for FFmpeg integration in CCExtractor. Edit the FFmpeg support in CCExtractor based on the new code for CC parser in FFmpeg.
-
-* **Week 12:**
-
+* **Week 12:**  
  Do cleanup work. Buffer period.
- 
- 
