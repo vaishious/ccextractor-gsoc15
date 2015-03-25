@@ -20,14 +20,12 @@ My proposal is to use CCExtractor's libraries to add support for Closed Captions
 The main motivation for this project is to improve upon the work done by Anshul last year in GSoC by giving back to the FFmpeg project which in turn also helps CCExtractor develop. This integration work will help both CCExtractor and FFmpeg. CCExtractor will be able to handle many more different types of files given the diversity of FFmpeg. FFmpeg will be able to treat the closed captions as a different stream and use filters on it. Also inter community bonding improves which can result in future code improvements for both.
 
 ####Detailed Description
-* **Week 1:**
- 
+* **Week 1:**  
  Get familiar with the internals of FFmpeg libraries. In particular the `libavformat`,`libavcodec` and `libavfilter` libraries after reading the [Doxygen documentation](https://www.ffmpeg.org/doxygen/trunk/index.html)
-* **Week 2:**
- 
+* **Week 2:**  
  Understand the code and familiarity with the CCExtractor parser. Think about working plan and skeleton code required for integration of the Closed Captions support in the decoder. 
 
-* **Week 3:**
+* **Week 3:**  
  
  Start with the demux process in the `libavformat` library. Have a basic working code. 
 * **Week 4:**
