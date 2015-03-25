@@ -43,7 +43,7 @@ The main motivation for this project is to improve upon the work done by Anshul 
  Do cleanup work. Buffer period.
 
 ####Future possible work with the communities
-
+Encoding Closed Captions using the `libavcodec` can be a future prospective goal. Also CCExtractor can be used inside FFmpeg as a filter to convert the CC stream into a subtitle stream with subsequent filters from the `libavfilter` library for a much more powerful media tool.
 
 ####Availability
 I want to work 40-45 hours from 1000 IST(0430 UTC) to 1800 IST(1230 UTC) Monday to Friday. Willing to work from 1100 IST(0530 UTC) to 1500 IST (1130 UTC) if required and behind on tasks. This is from 25th May to 26 July (8 weeks).
@@ -51,5 +51,3 @@ I want to work 40-45 hours from 1000 IST(0430 UTC) to 1800 IST(1230 UTC) Monday 
 My university reopens on 27th of July. So, for the next 4 weeks I will work 30 hours a week. 1000 IST(0430 UTC) to 1800 IST(1230 UTC) on Saturday and Sunday. The remaining work hours will be communicated later depending on my University schedule.
 
 I am also free from the 4th of May to the 16th of May and can get started on the project work early.
-
-####
