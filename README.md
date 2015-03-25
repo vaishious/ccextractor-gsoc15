@@ -51,3 +51,15 @@ I want to work 40-45 hours from 1000 IST(0430 UTC) to 1800 IST(1230 UTC) Monday 
 My university reopens on 27th of July. So, for the next 4 weeks I will work 30 hours a week. 1000 IST(0430 UTC) to 1800 IST(1230 UTC) on Saturday and Sunday. The remaining work hours will be communicated later depending on my University schedule.
 
 I am also free from the 4th of May to the 16th of May and can get started on the project work early.
+
+####Other Information
+* **Tools Familiar with:**  
+ Very proficient and comfortable in using C,C++,git.  
+ Comfortable working in Bash Scripting and Assembly programming if required for small parts of the project.
+* **Projects done:**  
+ [Ultimate Tic Tac Toe game](https://github.com/anandsinghkunwar/pransa-tictactoe): Designed a game and wrote the AI for the game. Game UI and rules were written in Python but the AI code was written in C.
+* **Work Machine and Environment:**  
+ Fedora 21-64 bit machine. Most of my C programming is done on the terminal using VIM.  
+ Plan to work from home which has a stable 4Mbps internet connection 24/7.
+* **Openness to work on different projects:**  
+ I am comfortable working for a different project than the one I applied for as I appreciate the work done by CCExtractor for the Open Source community and I feel like giving back to the community.
