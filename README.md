@@ -7,7 +7,7 @@
 * **Degree-Major**: B.Tech in Computer Science and Engineering
 * **Telephone**: (+91)7753058610 or (+91)9545702024
 * **IRC**: vaishious@irc.freenode.net
-* **Github**: [vaishious](https://github.com/vaishious)
+* **Github Username**: [vaishious](https://github.com/vaishious)
 * **Time Zone**: GMT(UTC) +0530
 
 ####Title
@@ -41,3 +41,15 @@ The main motivation for this project is to improve upon the work done by Anshul 
  Understand and become familiar with [Anshul's code](https://www.google-melange.com/gsoc/project/details/google/gsoc2014/anshul_bits/5757334940811264) for FFmpeg integration in CCExtractor. Edit the FFmpeg support in CCExtractor based on the new code for CC parser in FFmpeg.
 * **Week 12:**  
  Do cleanup work. Buffer period.
+
+####Future possible work with the communities
+
+
+####Availability
+I want to work 40-45 hours from 1000 IST(0430 UTC) to 1800 IST(1230 UTC) Monday to Friday. Willing to work from 1100 IST(0530 UTC) to 1500 IST (1130 UTC) if required and behind on tasks. This is from 25th May to 26 July (8 weeks).
+
+My university reopens on 27th of July. So, for the next 4 weeks I will work 30 hours a week. 1000 IST(0430 UTC) to 1800 IST(1230 UTC) on Saturday and Sunday. The remaining work hours will be communicated later depending on my University schedule.
+
+I am also free from the 4th of May to the 16th of May and can get started on the project work early.
+
+####
