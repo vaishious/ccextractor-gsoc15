@@ -1,0 +1,23 @@
+Hi,
+
+I am interested in doing work for CCExtractor during GSoC 2015. I tried to solve a few of the sample exercises on the GSoC page. My results are below:
+
+1. https://github.com/vaishious/ccextractor-gsoc15/blob/master/func_names.sh
+
+Code has been written in a Shell Script. This extracts a very large number of functions (3437). But this isn't 100% correct and will miss out on a few functions. The code which works for all functions fails to run in time. Thinking a little more about this made me realize that a C parser will be required and that will make it a difficult task. 
+
+2. Compiled CCextractor using the makefile. Ran perfectly. Not sure what the exercise means.
+
+3. EBU (https://tech.ebu.ch/docs/tech/tech3264.pdf) , ISDB and DTMB standards. Some of them have also been mentioned on the GSoC page of CCExtractor. 
+
+4. Few files are here: https://drive.google.com/open?id=0B_c5iaC4CM2CfjBGVktITDd2RHdJTXBQTXM5Tm52c3l6T2N4Q2JBbi1rU1hiNVZpQnR0R3M&authuser=0
+
+They are files with multiprogram CC. Some of the programs don't give any output with CCextractor and fail. Some output a line or two of subtitles and then fail.
+
+5. I haven't really been able to understand the large code base of CCExtractor so couldn't really come up with anything. I couldn't find any documentation for it either (If there is documentation, I would appreciate a link)
+
+I hope to finish writing my proposal draft by tomorrow for an informal review by the community. If I could get some documentation to understand the code it would really help my proposal. Let me know any errors and anything changes I should make.
+
+Thanks,
+Pranav Vaish
+
