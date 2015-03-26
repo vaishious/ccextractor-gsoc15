@@ -26,18 +26,22 @@ The main motivation for this project is to improve upon the work done by Anshul 
 #####Deliverables
 1. The demux process in `libavformat` works for closed captions stream from a container containing multiple streams of different types.
 2. Decoding of the data packets to get the raw decoded frames from the `libavcodec` library for the closed captions stream.
-3. Make `libavfilter` capable of handling the filtergraphs containing filters for closed captions. Only the filter to add closed captions will be implemented.
+3. Make `libavfilter` capable of handling the filtergraphs containing filters for closed captions. Only the filter to remove closed captions will be implemented for now.
 
 ######Optionals
-1. Add encoding of closed captions in 
+1. Ability to encode closed captions data followed by using the multiplexer to get the file containing closed captions.
+2. Add the filter for adding closed captions from the raw data. Along with the filter to remove closed captions from a stream, this should also give us the option to copy the closed captions from one file to another.
+
+#####Approach
+
 
 #####Weekly plan
 * **Week 1:**  
  Get familiar with the internals of FFmpeg libraries. In particular the `libavformat`,`libavcodec` and `libavfilter` libraries after reading the [Doxygen documentation](https://www.ffmpeg.org/doxygen/trunk/index.html)
 * **Week 2:**  
- Understand the code and familiarity with the CCExtractor parser. Think about working plan and skeleton code required for integration of the Closed Captions support in the decoder.
+ Understand the code and familiarity with the CCExtractor parser. Think about working plan and skeleton code required for integration of the Closed Captions support in the parser.
 * **Week 3:**  
- Start with the demux process in the `libavformat` library. Have a basic working code. 
+ Start with adding support for the demux process for closed captions in the `libavformat` library. Have a basic working code. 
 * **Week 4:**  
  Tweak the code, and make it more readable/understandable code. Writing testing for the new code and add documentation. Also try the code for multiple test files in different formats and measure performance.
 * **Week 5:**  
@@ -47,7 +51,7 @@ The main motivation for this project is to improve upon the work done by Anshul 
 * **Week 7(half) and 8:**  
  Tweak code. Add documentation for the library. Write large amount of testing and measure performance of the library. Code should be optimized for fast run time.
 * **Week 9:**  
- Add the Closed Caption support feature to `libavfilter`. For complex filtergraphs I need to make sure the algorithm can be changed to add CC support without errors on dependencies by testing.
+ Add the filter to remove a closed captions stream in the `libavfilter` library. For complex filtergraphs I need to make sure the algorithm can be changed to add CC support without errors on dependencies by testing.
 * **Week 10 and 11:**  
  Also the `ffmpeg` command line tool should have support for the new feature. 
  Understand and become familiar with [Anshul's code](https://www.google-melange.com/gsoc/project/details/google/gsoc2014/anshul_bits/5757334940811264) for FFmpeg integration in CCExtractor. Edit the FFmpeg support in CCExtractor based on the new code for CC parser in FFmpeg.
