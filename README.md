@@ -24,22 +24,30 @@ The main motivation for this project is to improve upon the work done by Anshul 
 
 ####Detailed Description
 #####Deliverables
-1. The demux process in `libavformat` works for closed captions stream from a container containing multiple streams of different types.
+1. The demuxing and muxing processes in `libavformat` works for closed captions stream from a container containing multiple streams of different types.
 2. Decoding of the data packets to get the raw decoded frames from the `libavcodec` library for the closed captions stream.
 3. Make `libavfilter` capable of handling the filtergraphs containing filters for closed captions. Only the filter to remove closed captions will be implemented for now.
 
 #####Optionals
-1. Ability to encode closed captions data followed by using the multiplexer to get the file containing closed captions.
+1. Ability to encode closed captions data to get the file containing closed captions.
 2. Add the filter for adding closed captions from the raw data. Along with the filter to remove closed captions from a stream, this should also give us the option to copy the closed captions from one file to another.
 
 #####Approach
+Using the help of the CCExtractor parser (demuxer and decoder), a similar parser will be implemented into the FFmpeg libraries.
+closed captions streams will be demuxed from all possible container formats by `libavformat` and added to the final AVFormatContext array. 
 
+Individual codec supports will need to be added. Function(s) avcodec\_decode\_closedcaptions similar to avcodec\_decode\_video2 and others for audio and subtitles will need to be implemented for closed captions. The process structure of decoding followed after this will be similar to the process used by `libavcodec` for other streams. Functions for decoding individual codecs (from CCExtractor) will be modified to be compatbile with the functions used in `libavcodec`. 
+
+The filter for removing closed captions from a stream will be done by simply demuxing and muxing, but without the CC stream. In case the command line has more options (e.g.: to change the video codec), then an decoding and encoding step will need to be added for the other streams. After checking if the current CC stream is compatible with the video codec and output container it can be muxed.
+**(Optionals)** Functions for encoding individual codecs will be added. While applying filters closed captions will also be encoded using correct codec. Filter to copy closed captions from file A to file B can be done by demuxing both A and B. CC stream from A will then be decoded and encoded (using the correct coded) and then will be muxed with streams from demuxing of B.
+
+Also the command line tool `ffmpeg` should support all the above changes and outputs on different options will be changed accordingly. Internals and output for various options on the command line will be supported.
 
 #####Weekly plan
 * **Week 1:**  
  Get familiar with the internals of FFmpeg libraries. In particular the `libavformat`,`libavcodec` and `libavfilter` libraries after reading the [Doxygen documentation](https://www.ffmpeg.org/doxygen/trunk/index.html)
 * **Week 2:**  
- Understand the code and familiarity with the CCExtractor parser. Think about working plan and skeleton code required for integration of the Closed Captions support in the parser.
+ Understand the code and familiarity with the CCExtractor parser. Think about a working plan and skeleton code required for integration of the Closed Captions support in the parser.
 * **Week 3:**  
  Start with adding support for the demux process for closed captions in the `libavformat` library. Have a basic working code. 
 * **Week 4:**  
