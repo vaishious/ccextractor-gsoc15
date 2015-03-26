@@ -67,7 +67,7 @@ Also the command line tool `ffmpeg` should support all the above changes and out
  Do cleanup work. Buffer period.
 
 ####Future possible work with the communities
-Encoding Closed Captions using the `libavcodec` can be a future prospective goal. Also CCExtractor can be used inside FFmpeg as a filter to convert the CC stream into a subtitle stream with subsequent filters from the `libavfilter` library for a much more powerful media tool.
+Apart from the optionals mentioned in the project description, the best possible future work will be to remove the parsing code from CCExtractor and to completely integrate CCExtractor with FFmpeg. Every video file will first be parsed by FFmpeg and then the parsed data will be converted to subtitles by CCextractor. The result is powerful and diverse APIs and libraries. Addition of closed captions parsing support to a project as big as FFmpeg along with good filters which can work on a closed captions stream can help in automating closed captioning for all forms of video particularly video found online. Data parsed from media on TV which already have closed captions can have applications in the field of Natural Language Processing.
 
 ####Availability
 I want to work 40-45 hours from 1000 IST(0430 UTC) to 1800 IST(1230 UTC) Monday to Friday. Willing to work from 1100 IST(0530 UTC) to 1500 IST (1130 UTC) if required and behind on tasks. This is from 25th May to 26 July (8 weeks).
@@ -81,7 +81,7 @@ I am also free from the 4th of May to the 16th of May and can get started on the
  Very proficient and comfortable in using C,C++,git.  
  Comfortable working in Bash Scripting and Assembly programming if required for small parts of the project.
 * **Projects done:**  
- [Ultimate Tic Tac Toe game](https://github.com/anandsinghkunwar/pransa-tictactoe): Designed a game and wrote the AI for the game. Game UI and rules were written in Python but the AI code was written in C.
+ [Ultimate Tic Tac Toe game](https://github.com/anandsinghkunwar/pransa-tictactoe): Designed a game and wrote the AI for the game. Game UI and rules were written in Python but the AI code(algorithms like Monte-Carlo and Minimax using Alpha-Beta pruning) was written in C.
 * **Work Machine and Environment:**  
  Fedora 21-64 bit machine. Most of my C programming is done on the terminal using VIM.  
  Plan to work from home which has a stable 4Mbps internet connection 24/7.
