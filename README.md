@@ -14,8 +14,8 @@
 Adding Closed Captions support to FFmpeg's libraries and integrating with CCExtractor
 
 ####Abstract
-Currently FFmpeg can handle various streams in a file (audio, video, subtitle, data, attachments) but it does not have a dedicated way to even parse the closed captions stream, let alone encode and use a mux to get a file with closed captions.  
-My proposal is to use CCExtractor's libraries to add support for Closed Captions in FFmpeg. This will allow FFmpeg to handle closed caption streams during decoding of media. The idea is that this will help CCExtractor use FFmpeg for decoding video files with closed captions. This adds support for many video files which are currently not supported in CCExtractor's parser (Anshul's project in essence).  
+Currently FFmpeg can handle various streams in a file (audio, video, subtitle, data, attachments) but it does not have a very good parser for closed captions stream.   
+My proposal is to use CCExtractor's libraries to add better support for Closed Captions in FFmpeg. This will allow FFmpeg to handle closed caption streams during decoding of media. The idea is that this will help CCExtractor use FFmpeg for decoding video files with closed captions. This adds support for many video files which are currently not supported in CCExtractor's parser (Anshul's project in essence).  
 My vision is to remove the parsing from CCExtractor and use FFmpeg libraries to parse video files in the future. CCExtractor code will then specifically be focused on using the parsed data to get subtitle files. This will result in more specific codebases along with inter-community interaction and coding. Maintainence of code becomes easier and people in the CCExtractor community who specialize in parsing can help FFmpeg improve their code.  
 (If time permits) I also hope to write code which can help in encoding the Closed Captions for the `libavcodec` library.
 
