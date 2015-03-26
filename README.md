@@ -28,7 +28,7 @@ The main motivation for this project is to improve upon the work done by Anshul 
 2. Decoding of the data packets to get the raw decoded frames from the `libavcodec` library for the closed captions stream.
 3. Make `libavfilter` capable of handling the filtergraphs containing filters for closed captions. Only the filter to remove closed captions will be implemented for now.
 
-######Optionals
+#####Optionals
 1. Ability to encode closed captions data followed by using the multiplexer to get the file containing closed captions.
 2. Add the filter for adding closed captions from the raw data. Along with the filter to remove closed captions from a stream, this should also give us the option to copy the closed captions from one file to another.
 
