@@ -36,7 +36,7 @@ Individual codec supports will need to be added. Function(s) avcodec\_decode\_cl
 The filter for removing closed captions from a stream will be done by simply demultiplexing and multiplexing all streams except the closed captions stream. In case the command line has more options (e.g.: to change the video codec), then an decoding and encoding step will also need to be added for the other streams. After checking if the current closed captions stream is compatible with the video codec and output container it can be muxed.  
 Also the command line tool `ffmpeg` should support all the above changes and outputs on different options will be changed accordingly. Internals and output for various options on the command line will be supported.
 
-**(Optional)** Functions for encoding individual codecs will be added. While applying filters closed captions will also be encoded using correct codec. Filter to copy closed captions from file A to file B can be done by demultiplexing both A and B into multiple streams. closed captions stream from A will then be decoded and encoded (using the correct coded) and then will be multiplexed with streams from B.  
+**(Optional)** Functions for encoding individual codecs will be added. While applying filters closed captions will also be encoded using correct codec. Filter to copy closed captions from file A to file B can be done by demultiplexing both A and B into multiple streams. closed captions stream from A will then be decoded and encoded (using the correct codec) and then will be multiplexed with streams from B.  
 
 #####Weekly plan
 * **Week 1:**  
@@ -70,6 +70,9 @@ I want to work 40-45 hours from 1000 IST(0430 UTC) to 1800 IST(1230 UTC) Monday 
 My university reopens on 27th of July. So, for the next 4 weeks I will work 30 hours a week. 1000 IST(0430 UTC) to 1800 IST(1230 UTC) on Saturday and Sunday. The remaining work hours will be communicated later depending on my University schedule.
 
 I am also free from the 4th of May to the 16th of May and can get started on the project work early.
+
+####Sample Exercises for CCExtractor
+My work has been sent in an email to Carlos and on the ccextractor-devel mailing list.
 
 ####Other Information
 * **Tools Familiar with:**  
