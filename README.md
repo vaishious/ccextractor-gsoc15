@@ -4,7 +4,7 @@
 * **Name**: Pranav Vaish
 * **Email**: pranav.vaish (at) gmail.com
 * **University**: [Indian Institute of Technology, Kanpur, India](http://www.iitk.ac.in)
-* **Degree-Major**: B.Tech in Computer Science and Engineering
+* **Degree-Major**: B.Tech in [Computer Science and Engineering](http://www.cse.iitk.ac.in/)
 * **Telephone**: (+91)7753058610 or (+91)9545702024
 * **IRC**: vaishious (at) irc.freenode.net
 * **Github Username**: [vaishious](https://github.com/vaishious)
