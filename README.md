@@ -72,7 +72,7 @@ My university reopens on 27th of July. So, for the next 4 weeks I will work 30 h
 I am also free from the 4th of May to the 16th of May and can get started on the project work early.
 
 ####Sample Exercises for CCExtractor
-My work has been sent in an email to Carlos and on the ccextractor-devel mailing list.
+My work has been sent in an email to Carlos and on the [ccextractor-devel mailing list](https://sourceforge.net/p/ccextractor/mailman/message/33628415/).
 
 ####Other Information
 * **Tools Familiar with:**  
