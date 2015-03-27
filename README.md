@@ -25,7 +25,7 @@ The main motivation for this project is to improve upon the work done by Anshul 
 2. Decoding of the data packets to get the raw decoded frames from the `libavcodec` library for the closed captions stream.
 3. Make `libavfilter` capable of handling the filtergraphs containing filters for closed captions. Only the filter to remove closed captions will be implemented for now.
 
-#####Optionals
+#####Optional
 1. Ability to encode closed captions data to get the file containing closed captions.
 2. Add the filter for adding closed captions from the raw data. Along with the filter to remove closed captions from a stream, this should also give us the option to copy the closed captions from one file to another.
 
@@ -33,7 +33,7 @@ The main motivation for this project is to improve upon the work done by Anshul 
 Using the help of the CCExtractor parser (demultiplexer and decoder), a similar parser will be implemented into the FFmpeg libraries.
 closed captions streams will be demultiplexed from all possible container formats by `libavformat` and added to the final AVFormatContext array.  
 Individual codec supports will need to be added. Function(s) avcodec\_decode\_closedcaptions similar to avcodec\_decode\_video2 and others for audio and subtitles will need to be implemented for closed captions. The process structure of decoding followed after this will be similar to the structure already used by `libavcodec` for other streams. Functions for decoding individual codecs (from CCExtractor) will be modified to be compatbile with the other dependent functions used in `libavcodec`.  
-The filter for removing closed captions from a stream will be done by simply demultiplexing and remultiplexing all streams except the closed captions stream. In case the command line has more options (e.g.: to change the video codec), then an decoding and encoding step will also need to be added for the other streams. After checking if the current closed captions stream is compatible with the video codec and output container it can be muxed.
+The filter for removing closed captions from a stream will be done by simply demultiplexing and remultiplexing all streams except the closed captions stream. In case the command line has more options (e.g.: to change the video codec), then an decoding and encoding step will also need to be added for the other streams. After checking if the current closed captions stream is compatible with the video codec and output container it can be muxed.  
 Also the command line tool `ffmpeg` should support all the above changes and outputs on different options will be changed accordingly. Internals and output for various options on the command line will be supported.
 
 **(Optional)** Functions for encoding individual codecs will be added. While applying filters closed captions will also be encoded using correct codec. Filter to copy closed captions from file A to file B can be done by demultiplexing both A and B into multiple streams. closed captions stream from A will then be decoded and encoded (using the correct coded) and then will be multiplexed with streams from B.  
