@@ -1,4 +1,4 @@
-##Adding Closed Captions support to FFmpeg's libraries and integrating with CCExtractor
+##Adding Closed Captions support to FFmpeg's libraries and improving the integration with CCExtractor
 
 ####Personal Details
 * **Name**: Pranav Vaish
@@ -11,11 +11,12 @@
 * **Time Zone**: GMT(UTC) +0530
 
 ####Title
-Adding Closed Captions support to FFmpeg's libraries and integrating with CCExtractor
+Adding Closed Captions support to FFmpeg's libraries and improving the integration with CCExtractor
 
 ####Abstract
-Currently FFmpeg can handle various streams in a file (audio, video, subtitle, data, attachments) but it does not have a very good parser for closed captions stream.   
-My proposal is to use CCExtractor's libraries to add better support for Closed Captions in FFmpeg. This will allow FFmpeg to handle closed caption streams during decoding of media. This idea is that this can also be used by CCExtractor for decoding video files with closed captions. This adds support for many video files which are currently not supported in CCExtractor's parser (Anshul's project in essence).  
+Currently FFmpeg can handle various streams in a file (audio, video, subtitle, data, attachments) but it does not have a very good parser for closed captions stream. My proposal is to use CCExtractor's libraries to add better support for Closed Captions in FFmpeg. This will also allow FFmpeg to handle decoding of closed caption streams. I also aim to add filters to remove or add closed captions streams from different file types.
+
+This idea is that this can also be used by CCExtractor for decoding video files with closed captions. This adds support for many video files which are currently not supported in CCExtractor's parser (Anshul's project in essence). 
 The long term goal of this project should be for FFmpeg to have quality support for closed captions parsing from a file and also for doing the opposite. This when coupled with capable filters which support cc streams can make FFmpeg a very powerful tool for all kinds of video processing and can have intersting applications like being used to extract raw data for NLP from tv streams (where closed captions are compulsory).
 
 ####Benefits to both Communities
